@@ -12,6 +12,7 @@ nav {
 	background-color: #00A6B3;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	text-align: center;
 }
 
 a {
@@ -30,11 +31,6 @@ h1 {
 	text-align: center;
 	text-transform: uppercase;
 	margin: 0;
-}
-
-nav {
-	text-align: center;
-	/*display: block;*/
 }
 
 .option {
@@ -80,6 +76,37 @@ div {
 	text-align: center;
 }
 
+.score-title {
+	margin-top: 40px;
+	color: black;
+	letter-spacing: 1px;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.score-display {
+	background: #666666;
+	font-family: "Raleway", sans-serif;
+	font-size: 18px;
+	width: 80px;
+	height: 20px;
+	text-transform: uppercase;
+	border-radius: 20px;
+	letter-spacing: 1px;
+	color: white;
+	border: none;
+	padding: 8px;
+	padding-bottom: 13px;
+	display: block;
+	margin: 0 auto;
+}
+
+.inner-score {
+	font-size: 20px;
+	margin: 0 auto;
+}
+
 img {
     margin: 40px 8px 40px;
 }
@@ -93,7 +120,6 @@ footer {
 	font-size: 14px;
 	letter-spacing: .08em;
 	font-weight: 500;
-	
 }
 
 .copyright {
@@ -104,6 +130,28 @@ footer {
 .message {
     float: right;
     font-family: "Raleway", sans-serif;
+}
+
+button {
+	background: #F15B31;
+	font-family: "Raleway", sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: white;
+	border: none;
+	padding: 8px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 45px;
+}
+
+button:hover {
+	box-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+button:focus {
+	outline-style: none;
 }
 
 .clearfix:after {

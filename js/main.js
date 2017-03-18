@@ -22,10 +22,16 @@ var cards = [
 ];
 
 var cardsInPlay = [];
+var score = 0;
+
+var scoreElement = document.getElementById('score');
+scoreElement.innerHTML = 0;
 
 var checkForMatch = function () {
   if (cardsInPlay[0] === cardsInPlay[1]) {
     alert("You found a match!");
+    score++;
+    scoreElement.innerHTML = score;
   } else {
     alert("Sorry, try again.");
   }
@@ -41,6 +47,7 @@ var flipCard = function () {
   if (cardsInPlay.length === 2) {
     checkForMatch();
   }
+  console.log("cardInPlay: " + cardsInPlay);
 }
 
 var createBoard = function () {
@@ -55,4 +62,17 @@ var createBoard = function () {
   }
 }
 
+var reset = function () {
+  var cardElements = document.getElementById("game-board").children;
+  for (var i = 0; i < cards.length; i++) {
+    cardElements[i].setAttribute("src", "images/back.png");
+  }
+  cardsInPlay = [];
+}
+
+var initializeButton = function () {
+  document.getElementById("reset-button").addEventListener("click", reset)
+}
+
+initializeButton();
 createBoard();
