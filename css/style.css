@@ -8,6 +8,16 @@ header {
 	padding: 30px 20px;
 }
 
+h1 {
+	color: #FFF; /* #0D2C40 */
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 45px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+}
+
 nav {
 	background-color: #00A6B3;
 	padding-top: 20px;
@@ -21,16 +31,6 @@ a {
 
 a:hover {
 	border-color: white;
-}
-
-h1 {
-	color: #FFF; /* #0D2C40 */
-	letter-spacing: 1px;
-	font-weight: 400;
-	font-size: 45px;
-	text-align: center;
-	text-transform: uppercase;
-	margin: 0;
 }
 
 .option {
@@ -111,27 +111,6 @@ img {
     margin: 40px 8px 40px;
 }
 
-footer {
-	text-transform: uppercase;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: #0D2C40;
-	color: white;
-	font-size: 14px;
-	letter-spacing: .08em;
-	font-weight: 500;
-}
-
-.copyright {
-    float: left;
-    font-family: "Raleway", sans-serif;
-}
-
-.message {
-    float: right;
-    font-family: "Raleway", sans-serif;
-}
-
 button {
 	background: #F15B31;
 	font-family: "Raleway", sans-serif;
@@ -154,6 +133,17 @@ button:focus {
 	outline-style: none;
 }
 
+footer {
+	text-transform: uppercase;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #0D2C40;
+	color: white;
+	font-size: 14px;
+	letter-spacing: .08em;
+	font-weight: 500;
+}
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -161,6 +151,16 @@ button:focus {
   clear: both;
   height: 0;
   font-size: 0;
+}
+
+.copyright {
+    float: left;
+    font-family: "Raleway", sans-serif;
+}
+
+.message {
+    float: right;
+    font-family: "Raleway", sans-serif;
 }
 
 .name {

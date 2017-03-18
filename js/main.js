@@ -71,7 +71,7 @@ var reset = function () {
 }
 
 var initializeButton = function () {
-  document.getElementById("reset-button").addEventListener("click", reset)
+  document.getElementById("reset-button").addEventListener("click", reset);
 }
 
 initializeButton();
